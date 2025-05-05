@@ -1,4 +1,4 @@
-import { House, Zap, LifeBuoy, DollarSign, IconNode } from "lucide-react";
+import { House, Zap, LifeBuoy, DollarSign } from "lucide-react";
 import NavItem from "./NavItem";
 
 const Header = () => {
