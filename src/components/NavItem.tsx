@@ -15,12 +15,10 @@ const NavItem = ({ href, label, icon }: NavItemProps) => {
     <li>
       <Link
         href={href}
-        className={clsx(
-          "text-gray-500 hover:text-gray-800 flex gap-1 items-center",
-          {
-            "text-gray-800 font-bold": isActive,
-          }
-        )}
+        className={clsx(" hover:text-gray-800 flex gap-1 items-center", {
+          "font-extrabold text-black": isActive,
+          "text-gray-400": !isActive,
+        })}
       >
         {icon && icon}
         {label}

@@ -3,8 +3,10 @@ import NavItem from "./NavItem";
 
 const Header = () => {
   return (
-    <header className="bg-white rounded-lg shadow-sm w-full h-16 flex items-center px-8 justify-between">
-      <h1 className="font-bold">MORSE</h1>
+    <header className="bg-white rounded-lg shadow-lg w-full h-16 flex items-center px-8 justify-between">
+      <h1 className="font-extrabold bg-gradient-to-r from-red-400 to-blue-400 text-transparent bg-clip-text text-2xl">
+        MORSE
+      </h1>
 
       <nav>
         <ul className="flex gap-4 ml-4">
