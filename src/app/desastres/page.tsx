@@ -2,7 +2,6 @@ import BarChart from "@/components/BarChart";
 import ChartCard from "@/components/ChartCard";
 import { clientPromise } from "@/db";
 import { ChartData } from "@/interfaces/ChartData";
-import { CloudRainWind, Flame } from "lucide-react";
 
 const Desastres = async () => {
   const client = await clientPromise;
