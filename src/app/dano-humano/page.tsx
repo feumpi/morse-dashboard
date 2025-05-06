@@ -11,7 +11,7 @@ const DanoHumano = async () => {
 
   console.log(data);
 
-  return <>Dano Humano</>;
+  return <>Em breve</>;
 };
 
 export default DanoHumano;

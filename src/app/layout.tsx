@@ -27,14 +27,18 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden`}
       >
-        <div className="w-screen h-screen bg-linear-to-br from-blue-400 to-red-400 flex flex-col gap-4 p-4">
-          <Header />
+        <div className="w-screen h-screen flex flex-col bg-gradient-to-br from-blue-400 to-red-400">
+          {/* Header with fixed height */}
+          <div className="h-20 shrink-0">
+            <Header />
+          </div>
 
-          <div className="flex gap-4 w-full h-full">
+          {/* Content with sidebar and scrollable main */}
+          <div className="flex flex-1 gap-4 p-4 overflow-hidden">
             <Sidebar />
-            <main className="bg-white shadow-lg rounded-lg flex-1 flex flex-col justify-center items-center">
+            <main className="bg-white shadow-lg rounded-lg flex-1 flex flex-col overflow-y-auto p-4">
               {children}
             </main>
           </div>

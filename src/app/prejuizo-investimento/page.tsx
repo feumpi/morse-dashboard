@@ -11,7 +11,7 @@ const PrejuizoInvestimento = async () => {
 
   console.log(data);
 
-  return <>Prejuizo e Investimento</>;
+  return <>Em breve</>;
 };
 
 export default PrejuizoInvestimento;
